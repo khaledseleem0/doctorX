@@ -112,30 +112,46 @@ function HomeLayout() {
 
   return (
     <div>
-       {/* hero section */}
+      {/* hero section */}
 
-      <div className="container" id="home" > 
+      <div className="container" id="home">
         <div className={styles.hero + " flex spaced__between"}>
           <div className={styles.heroContent}>
-            <p className={styles.upperCase} data-aos="fade-left"    data-aos-duration="700">
+            <p
+              className={styles.upperCase}
+              data-aos="fade-left"
+              data-aos-duration="700"
+            >
               EXPERT MEDICAL TREATMENT
             </p>
-            <div className={styles.heroText} data-aos="fade-left"    data-aos-duration="900">
+            <div
+              className={styles.heroText}
+              data-aos="fade-left"
+              data-aos-duration="900"
+            >
               We follow a holistic approach to health care.
             </div>
-            <p data-aos="fade-left"      data-aos-duration="500">
+            <p data-aos="fade-left" data-aos-duration="500">
               Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod.
             </p>
-            <button data-aos="fade-left" className={styles.heroBtn + " btn"}      data-aos-duration="500">
+            <button
+              data-aos="fade-left"
+              className={styles.heroBtn + " btn"}
+              data-aos-duration="500"
+            >
               Book an Appointment
             </button>
           </div>
           <div className={styles.heroImage}>
-            <img src="/assets/images/hero.png" alt="" data-aos="fade-up" data-aos-duration="900" />
+            <img
+              src="/assets/images/hero.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="900"
+            />
             <div
               className={styles.tot + " flex center_x spaced__between"}
               data-aos="fade-left"
-              
             >
               <div className="text-30 bold">5K+</div>
               <div>Happy Patients</div>
@@ -196,20 +212,40 @@ function HomeLayout() {
         {/* services section */}
         <div className="container">
           <div className={styles.services + " flex column"}>
-            <p data-aos="fade-up" data-aos-duration="900" data-aos-offset="160" className={styles.colored + " txt-c bold"} id="services">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-offset="160"
+              className={styles.colored + " txt-c bold"}
+              id="services"
+            >
               SERVICES
             </p>
-            <p data-aos="fade-up" data-aos-duration="900" data-aos-offset="160" className={styles.heading}>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-offset="160"
+              className={styles.heading}
+            >
               Experienced in multiple medical practices
             </p>
-            <p data-aos="fade-up" data-aos-duration="900" data-aos-offset="160" className={styles.servicesDescription}>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-offset="160"
+              className={styles.servicesDescription}
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown.
+              industry. Lorem Ipsum has been the industrys.
             </p>
 
             <div className={styles.servicesSlider}>
-              <div className={styles.service} data-aos="fade-left" data-aos-duration="700" data-aos-offset="400">
+              <div
+                className={styles.service}
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-offset="200"
+              >
                 <Image
                   src="/assets/images/service.svg"
                   alt=""
@@ -223,7 +259,12 @@ function HomeLayout() {
                 </p>
               </div>
               {/*  */}
-              <div className={styles.service} data-aos="fade-left" data-aos-duration="800" data-aos-offset="400">
+              <div
+                className={styles.service}
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-offset="200"
+              >
                 <Image
                   src="/assets/images/service.svg"
                   alt=""
@@ -237,7 +278,12 @@ function HomeLayout() {
                 </p>
               </div>
               {/*  */}
-              <div className={styles.service} data-aos="fade-left" data-aos-duration="900" data-aos-offset="400">
+              <div
+                className={styles.service}
+                data-aos="fade-left"
+                data-aos-duration="900"
+                data-aos-offset="200"
+              >
                 <Image
                   src="/assets/images/service.svg"
                   alt=""
@@ -251,7 +297,12 @@ function HomeLayout() {
                 </p>
               </div>
               {/*  */}
-              <div className={styles.service} data-aos="fade-left" data-aos-duration="1200" data-aos-offset="400">
+              <div
+                className={styles.service}
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-offset="200"
+              >
                 <Image
                   src="/assets/images/service.svg"
                   alt=""
@@ -270,13 +321,27 @@ function HomeLayout() {
         {/* video demo section */}
       </div>
       <div id="about" className={styles.vdSection + " flex column centered"}>
-        <div className={styles.colored + " txt-c bold"} data-aos="fade-up"  data-aos-duration="700" data-aos-offset="160">
+        <div
+          className={styles.colored + " txt-c bold"}
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="160"
+        >
           DR. MATTHEW ANDERSON
         </div>
-        <div className={styles.heading} data-aos="fade-up" data-aos-duration="700" data-aos-offset="160">
+        <div
+          className={styles.heading}
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="160"
+        >
           Watch video to learn why he is the right doctor for you
         </div>
-        <div className={styles.vd} data-aos="zoom-out-up" data-aos-duration="900">
+        <div
+          className={styles.vd}
+          data-aos="zoom-out-up"
+          data-aos-duration="900"
+        >
           <iframe
             width="100%"
             height="340"
@@ -290,19 +355,11 @@ function HomeLayout() {
       </div>
       {/* about TESTIMONIAL */}
       <div className="container">
-        <div className={styles.about + " flex centered"}>
-          <div
-            className={styles.aboutImage}
-
-          >
-            <Image
-              src="/assets/images/meeting.png"
-              alt=""
-              width={500}
-              height={400}
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            />
+        <div className={styles.about + " flex"}>
+          <div className={styles.aboutImage}>
+            <div data-aos="fade-right" data-aos-duration="1200">
+              <img src="/assets/images/meeting.png" alt="" />
+            </div>
             <Image
               src="/assets/images/ceo.svg"
               alt=""
@@ -348,13 +405,17 @@ function HomeLayout() {
         <div className="container flex column centered">
           <p
             className={styles.colored + " txt-c bold"}
-            data-aos="fade-up-left" data-aos-duration="900" data-aos-offset="160"
+            data-aos="fade-up-left"
+            data-aos-duration="900"
+            data-aos-offset="160"
           >
             TESTIMONIALS
           </p>
           <p
             className={styles.heading + " txt-c"}
-            data-aos="fade-up-right" data-aos-duration="900" data-aos-offset="160"
+            data-aos="fade-up-right"
+            data-aos-duration="900"
+            data-aos-offset="160"
           >
             Our Patients Says
           </p>
@@ -423,17 +484,14 @@ function HomeLayout() {
       </div>
 
       <div className="">
-        <div className={styles.touch + " flex column centered container"} id="contact"   
-           >
-          <div
-            className={styles.heading}
-
-          >
+        <div
+          className={styles.touch + " flex column centered container"}
+          id="contact"
+        >
+          <div className={styles.heading}>
             Get in touch to book your first appointment
           </div>
-          <p>
-            Booking an appointment is quick and simple
-          </p>
+          <p>Booking an appointment is quick and simple</p>
           <div className={styles.inputs + " flex centered"}>
             <input type="text" placeholder="Enter your email address" />
             <button className={styles.heroBtn + " btn"}>Submit</button>
@@ -495,14 +553,20 @@ function HomeLayout() {
         </div>
       </footer>
       <div className="cpd">
-        Created By Nights Of Crying And <a href="http://github.com/khaledseleem0" target="_blank" rel="noreferrer" onClick={()=>{
-	window.open('https://twitter.com/Khaled70834970')
-  
-  }}>@Khalid Seleem</a>
+        Created By Nights Of Crying And{" "}
+        <a
+          href="http://github.com/khaledseleem0"
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => {
+            window.open("https://twitter.com/Khaled70834970");
+          }}
+        >
+          @Khalid Seleem
+        </a>
       </div>
     </div>
   );
 }
-
 
 export default HomeLayout;

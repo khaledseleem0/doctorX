@@ -149,15 +149,20 @@
 .aboutImage {
   position: relative;
   margin: 0 auto;
-  padding: 20px;
-  width: 600px !important;
+
+  width: fit-content !important;
+}
+.aboutImage div{
+  overflow-x: hidden;
+  width: 500px !important;
+  margin: 0 auto;
+}
+.aboutImage div img{
+  width: 100%;
 }
 .aboutContent {
      padding: 20px;
-     max-width: 600px;
-     border-radius: 5px;
-     top: 100px;
-   
+     width: 600px;
    }
 
    
@@ -173,12 +178,13 @@
 .aboutImage img:nth-child(2) {
   position: absolute;
   bottom: -110px;
-  right: 80px;
+  right: 27px;
 }
+
 .aboutContent p {
-  padding: 7px 0 27px 0;
+  padding: 0 0 15px 0;
 }
-.aboutContent div button:nth-child(2) {
+.centerContent div button:nth-child(2) {
   margin: 0 0px 0 30px;
 }
 
@@ -270,13 +276,16 @@
   color: var(--dark-blue);
 }
 
+.aboutContent div button:nth-child(2) {
+  margin: 0 0 0 20px ;
+}
 /* phone */
 
 @media (width < 500px) {
   .aboutContent div button:nth-child(2) {
     margin: 30px;
   }
-  
+
   .services .servicesDescription {
     max-width: 100%;
     
@@ -304,14 +313,45 @@
 @media (width < 1040px) {
      .about{
           flex-flow: column;
+          justify-content: start;
+          align-items: flex-start;
      }
+     .aboutContent{
+      max-width: 600px;
+      padding: 20px 0  0 0  ;
+    }
 }
+
+@media (width >= 400px) {
+  .aboutImage div{
+    width: calc(100vw - 4em) !important;
+    
+  }.aboutContent{
+    width: calc(100vw - 4em) !important;
+  }
+}
+
+@media (width < 400px) {
+  .about{
+    align-items: center;
+  }
+  .aboutImage div{
+    width: calc(100vw - 4em) !important;
+    
+  }.aboutContent{
+    width: calc(100vw - 4em) !important;
+    /* background: #000;/ */
+  }
+}
+
 @media (width < 720px) {
+
   .footer{
     padding:40px 20px;
   }
   .footer >div {
     flex-flow: column;
+    
     padding: 0;
   }.footer_links{
     align-items: space-between;
@@ -319,8 +359,20 @@
     width: 100%;
     margin-top: 30px;
   }
+  .aboutImage div{
+    width: calc(100vw - 4em) !important;
+
+
+  }
+
+}
+@media (width > 1040px) {
+  .aboutImage div{
+    width: 600px !important; 
+  }
 }
 @media (width < 1040px) {
+  
      .hero{
           max-width: 600px;
           flex-flow: column-reverse;
@@ -336,7 +388,7 @@
  }
 }
 @media (width < 800px) {
-  
+
   .heading{
     font-size: 25px;
   }
