@@ -319,7 +319,7 @@ function HomeLayout() {
             data-aos-duration="1200"
           >
             <div className={styles.colored + " txt-c bold"}>ABOUT US</div>
-            <div className={styles.heading}>
+            <div className={styles.heading + " txt-l"}>
               A dedicated doctor with the core mission to help
             </div>
             <p>
@@ -332,7 +332,7 @@ function HomeLayout() {
               ex voluptatem, nisi veritatis sed ratione. Nemo consequatur
               quibusdam non reiciendis.
             </p>
-            <div className="flex">
+            <div className="flex sm-col">
               <button className={styles.heroBtn + " btn"}>
                 Book an Appointment
               </button>
@@ -422,9 +422,9 @@ function HomeLayout() {
         {/*  */}
       </div>
 
-      <div className="container">
-        <div className={styles.touch + " flex column centered"} id="contact"   data-aos-offset="300" data-aos="fade-up"
-            data-aos-duration="1200">
+      <div className="">
+        <div className={styles.touch + " flex column centered container"} id="contact"   
+           >
           <div
             className={styles.heading}
 

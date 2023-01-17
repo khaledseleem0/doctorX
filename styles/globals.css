@@ -1,20 +1,20 @@
-@import url('./framework.css');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url("./framework.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter",-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-;  overflow-x: hidden;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 
-      background:var(--Scnd-gray) ;
+  background: var(--Scnd-gray);
   position: relative;
+}
 
-  }
-.clear{
-  margin-bottom:90px;
-
+.clear {
+  margin-bottom: 90px;
 }
 
 * {
@@ -23,37 +23,39 @@ body {
   font-size: 18px;
 }
 
-.container{
+.container {
   max-width: 1140px;
   margin: 0 auto;
-  /* padding:0 2em; */
-  /* background: gray; */
 }
 
-.dot{
+.dot {
   height: 5px;
   width: 15px;
   background: hsla(154, 72%, 50%, 0.383);
   display: block;
   margin: 10px;
-
-}.dots{
-  display: flex;
-  justify-content:center;
-  padding: 20px 0;
-}.active{
-  background: #24DA8B;
 }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.active {
+  background: #24da8b;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-
 .hamburger span:first-of-type {
   transform: translateY(-10.5px);
   animation-name: rotate-base-1;
 }
+
 .active__hum span:first-of-type {
   animation-name: rotate-1;
 }
@@ -62,6 +64,7 @@ a {
   transform: translateY(10.5px);
   animation-name: rotate-base-2;
 }
+
 .active__hum span:last-child {
   animation-name: rotate-2;
 }
@@ -72,76 +75,88 @@ a {
 }
 
 @media (width < 870px) {
-  .navbar{
+  .navbar {
     transform: translateY(-105%) !important;
-    transition:  transform .5s ease-in-out , opacity 0.4s ease-in-out;
-    z-index:-1;
+    transition: transform 0.5s ease-in-out, opacity 0.4s ease-in-out;
+    z-index: -1;
     opacity: 0;
-  
   }
-  .deactive__navbar{
-    transform: translateY(0%) !important ;
+
+  .deactive__navbar {
+    transform: translateY(0%) !important;
     opacity: 1;
-  
-    /* background: #000 !important; */
+
   }
 }
-/* Let's create the animations */
+
 @keyframes rotate-1 {
-0% {
-transform: translateY(-10.5px);
+  0% {
+    transform: translateY(-10.5px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
 }
-50% {
-transform: translateY(0);
-}
-100% {
-transform: rotate(-45deg);
-}
-}
+
 @keyframes rotate-base-1 {
-0% {
-transform: translateY(0) rotate(-45deg);
-}
-50% {
-transform: rotate(0deg);
-}
-100% {
-transform: translateY(-10.5px);
-}
+  0% {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-10.5px);
+  }
 }
 
 @keyframes rotate-2 {
-0% {
-transform: translateY(10.5px);
+  0% {
+    transform: translateY(10.5px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
 }
-50% {
-transform: translateY(0);
-}
-100% {
-transform: rotate(45deg);
-}
-}
+
 @keyframes rotate-base-2 {
-0% {
-transform: translateY(0) rotate(45deg);
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(10.5px);
+  }
 }
-50% {
-transform: rotate(0deg);
-}
-100% {
-transform: translateY(10.5px);
-}
-}
-/* 
 
 
 
-/* my frameWork */
+
 
 @media (width < 1140px) {
-  .container{
+  .container {
     padding: 0 2em;
-    
   }
-  
+}
+
+@media (width < 400px) {
+  .container {
+    padding: 0 1em;
+  }
 }

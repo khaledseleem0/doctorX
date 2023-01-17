@@ -5,8 +5,6 @@
 }
 
 .heroContent {
-  /* background: #000; */
-  /* background: #000; */
   height: fit-content;
 
   font-size: 18px;
@@ -39,20 +37,14 @@
 .heroImage img {
   display: inline-block;
   width: 100%;
-  /* background: #000; */
 }
 .heroImage {
-  /* background:var(--Marin-blue); */
   display: inline-flex;
-  /* width: 300px; */
-  /* height: 100vh; */
   position: relative;
   justify-content: center;
   align-items: center;
   position: relative;
-  /* background: #fafa; */
   width: 980px;
-  /* text-align: center; */
 }
 .tot {
   background: rgba(255, 255, 255, 0.5);
@@ -62,8 +54,7 @@
   position: absolute;
   left: -60px;
   bottom: 20%;
-  /* display: flex; */
-  /* justify-content: ; */
+
   padding: 5px;
   width: 140px;
   height: 50px;
@@ -78,7 +69,6 @@
 }
 .tot div:nth-child(2) {
   width: fit-content;
-  /* background: #000; */
   display: inline;
   width: auto;
   margin-left: 10px;
@@ -132,17 +122,14 @@
   padding: 32px 0 17px 0;
 }
 
-/* vdSection */
 .vdSection {
   padding: 80px 0;
-  /* height: 600px; */
   background: #dbe7ff;
   width: 100%;
   overflow: hidden;
 
 }
 .vd {
-  /* width: 600px; */
   border-radius: 20px;
   overflow: hidden;
   margin: 56px auto 0 auto ;
@@ -153,7 +140,6 @@
 /* About Section */
 .about {
   justify-content: center;
-  /* background: #000; */
   padding: 100px 0;
   position: relative;
 }
@@ -162,25 +148,20 @@
 }
 .aboutImage {
   position: relative;
-  margin-right: 0px;
+  margin: 0 auto;
   padding: 20px;
   width: 600px !important;
 }
 .aboutContent {
-     /* position: absolute; */
      padding: 20px;
      max-width: 600px;
      border-radius: 5px;
-     /* right: -60px; */
      top: 100px;
-     /* background: #fff; */
-     /* box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.03); */
+   
    }
 
    
-.aboutImage img:first-child {
-  /* border-radius: 15px; */
-}
+
 .logoSponsers{
      display: flex;
      flex-wrap: wrap;
@@ -203,12 +184,9 @@
 
 /* comments */
 .comment {
-  /* // 350 / 54 */
   width: 500px;
-  /* margin:0 54px !important; */
   background: #ffff;
   padding: 42px 24px;
-  /* background: #000; */
   max-width: 200px;
 }
 .comment p {
@@ -223,26 +201,21 @@
 .comment footer div p:nth-child(2) {
   padding: 0 5px;
 }
-/* div{
-     font-size: 14px;
-     /* color: #565656; */
 
-/* }  */
 .test .quote {
   position: absolute;
-  top: -20%;
+  top: -13%;
   z-index: 200;
 }
 .test .quote:nth-of-type(2) {
   top: 72% !important;
-  /* top: auto; */
   right: 5%;
 }
 .touch {
   padding: 62px 0;
   background: #dbe7ff;
   border-radius: 60px;
-  margin: 137px 0;
+  margin: 137px auto;
 }
 .touch .inputs{
   margin-top: 20px;
@@ -254,7 +227,6 @@
 }
 .inputs input {
   padding: 10px;
-  /* margin: 10px 10px; */
   outline: none;
   border: none;
   display: inline-block;
@@ -268,8 +240,6 @@
   font-weight: 700;
   border-radius: 8px;
   cursor: pointer;
-  /* text-decoration: underline;
-   */
   background-color: #dbe7ff;
   }
 
@@ -278,8 +248,6 @@
   background: #ffff;
 }
 .social {
-  /* background: #000;
-      */
   width: 250px;
 }
 .social p {
@@ -292,7 +260,6 @@
 .footer_links {
   width: 260px;
 
-  /* background: #000; */
 }
 .footer_links ul li {
   padding: 10px 0;
@@ -306,6 +273,14 @@
 /* phone */
 
 @media (width < 500px) {
+  .aboutContent div button:nth-child(2) {
+    margin: 30px;
+  }
+  
+  .services .servicesDescription {
+    max-width: 100%;
+    
+  }
   .heroImage{
     width: 70vw !important;
      margin: 0 auto;
@@ -318,7 +293,12 @@
     right: -29px;
   }.touch{
     text-align: center;
-  }
+    margin: 30px 0 50px 0;
+    padding: 30px 0;
+    border-radius: 0px;
+    background-size: cover;
+    }
+
 }
 
 @media (width < 1040px) {
@@ -327,9 +307,12 @@
      }
 }
 @media (width < 720px) {
+  .footer{
+    padding:40px 20px;
+  }
   .footer >div {
-    /* background: #000 !important; */
     flex-flow: column;
+    padding: 0;
   }.footer_links{
     align-items: space-between;
     justify-content: space-between;
@@ -353,13 +336,12 @@
  }
 }
 @media (width < 800px) {
+  
   .heading{
     font-size: 25px;
   }
   .vd{
     width: 90vw !important;
-  /* background: #000; */
-  /* padding: 20%; */
   }
   .inputs {
     

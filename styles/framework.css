@@ -11,18 +11,18 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
-    /* --Main:royalblue; */
     --Scnd-gray:#F5F5F5;
     --Primary-blue:#204EA5;
     --Main:#24DA8B
     
+}.txt-l{
+     text-align: left !important;
 }
 .cpd{
      padding: 10px ;
      text-align: center;
      font-size: 15px;
      background-color: var(--Main);
-     /* background: var(--Purplish-blue); */
      color: #fff;
 }
 .cpd a {
@@ -31,7 +31,6 @@
 
 }
 *{
-     /* color:royalblue; */
      padding: 0;
      margin: 0;
      box-sizing: border-box;
@@ -109,10 +108,7 @@ button{
 
 }
 
-/* 
 
-
-*/
 
 
 .text-30{
@@ -174,9 +170,6 @@ button{
 
 
 
-
-
-
 /* texts */
 
 .lgb-txt{
@@ -191,4 +184,11 @@ font-size: 32px;
      .sm-none{
           display: none;
      }
+}
+@media (width < 500px) {
+     
+.sm-col{
+     flex-flow:column ;
+}
+
 }

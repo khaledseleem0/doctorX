@@ -8,7 +8,6 @@ function Navbar() {
       .classList.toggle("deactive__navbar");
     hum.classList.toggle("active__hum");
   };
-  // useEffect
   return (
     <div className={styles.wrapper}>
       <nav className={styles.nav + " container"}>
