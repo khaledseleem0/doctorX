@@ -17,7 +17,19 @@
     --Main:#24DA8B
     
 }
+.cpd{
+     padding: 10px ;
+     text-align: center;
+     font-size: 15px;
+     background-color: var(--Main);
+     /* background: var(--Purplish-blue); */
+     color: #fff;
+}
+.cpd a {
+     font-size: 16px;
+     font-weight: 500;text-decoration: underline;
 
+}
 *{
      /* color:royalblue; */
      padding: 0;

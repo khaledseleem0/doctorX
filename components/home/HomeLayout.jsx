@@ -149,6 +149,7 @@ function HomeLayout() {
             </div>
           </div>
         </div>
+        {/* logo of sopnsers  */}
         <div className={styles.logoSponsers + " flex spaced__between"}>
           <div>
             <Image
@@ -277,7 +278,7 @@ function HomeLayout() {
         </div>
         <div className={styles.vd} data-aos="zoom-out-up" data-aos-duration="900">
           <iframe
-            width="620"
+            width="100%"
             height="340"
             src="https://www.youtube.com/embed/pc1jlelzmPY"
             title="Explanatory video: Healthcare market"
@@ -287,6 +288,7 @@ function HomeLayout() {
           ></iframe>
         </div>
       </div>
+      {/* about TESTIMONIAL */}
       <div className="container">
         <div className={styles.about + " flex centered"}>
           <div
@@ -340,7 +342,7 @@ function HomeLayout() {
         </div>
       </div>
 
-      {/* </div> */}
+      {/* </TESTIMONIALS / comments*/}
 
       <div className={styles.test}>
         <div className="container flex column centered">
@@ -433,7 +435,6 @@ function HomeLayout() {
             Booking an appointment is quick and simple
           </p>
           <div className={styles.inputs + " flex centered"}>
-            <input type="text" placeholder="Enter your Name" />
             <input type="text" placeholder="Enter your email address" />
             <button className={styles.heroBtn + " btn"}>Submit</button>
           </div>
@@ -493,8 +494,15 @@ function HomeLayout() {
           </div>
         </div>
       </footer>
+      <div className="cpd">
+        Created By Nights Of Crying And <a href="http://github.com/khaledseleem0" target="_blank" rel="noreferrer" onClick={()=>{
+	window.open('https://twitter.com/Khaled70834970')
+  
+  }}>@Khalid Seleem</a>
+      </div>
     </div>
   );
 }
+
 
 export default HomeLayout;
